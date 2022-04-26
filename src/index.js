@@ -1,5 +1,7 @@
 import timer from './modules/timer'
-// import two from './modules/two'
+import modal from './modules/modal'
+import menu from './modules/menu'
 
 timer() 
-// two()
+modal()
+menu()

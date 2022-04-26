@@ -16,7 +16,7 @@ const timer = () => {
     }
 
     const updateClock = () => {
-        let getTime = getTimeRemaining('24 april 2022')
+        let getTime = getTimeRemaining('28 april 2022')
 
         if (getTime.hours > 10) {
             timerHours.textContent = getTime.hours
