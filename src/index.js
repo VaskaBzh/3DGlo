@@ -7,7 +7,7 @@ import calculatorValidate from './modules/calculatorValidate'
 import calculator from './modules/calculator'
 import tabs from './modules/tabs'
 import slider from './modules/slider'
-import sendingForm from './modules/sendForm'
+import sendForm from './modules/sendForm'
 import helpers, { animate } from './modules/helpers'
 
 timer('30 april 2022') 
@@ -19,5 +19,31 @@ calculatorValidate()
 calculator(100)
 tabs()
 slider()
-sendingForm()
+sendForm({
+    formId: 'form1', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'total'
+        }
+    ] 
+})
+sendForm({
+    formId: 'form2', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'total'
+        }
+    ] 
+})
+sendForm({
+    formId: 'form3', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'total'
+        }
+    ] 
+})
 helpers()
