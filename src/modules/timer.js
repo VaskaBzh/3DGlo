@@ -1,4 +1,4 @@
-const timer = () => {
+const timer = (deadline) => {
     const timerHours = document.getElementById('timer-hours')
     const timerMinutes = document.getElementById('timer-minutes')
     const timerSeconds = document.getElementById('timer-seconds')
@@ -16,7 +16,7 @@ const timer = () => {
     }
 
     const updateClock = () => {
-        let getTime = getTimeRemaining('28 april 2022')
+        let getTime = getTimeRemaining(deadline)
 
         if (getTime.hours >= 10) {
             timerHours.textContent = getTime.hours

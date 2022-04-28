@@ -7,13 +7,17 @@ import calculatorValidate from './modules/calculatorValidate'
 import calculator from './modules/calculator'
 import tabs from './modules/tabs'
 import slider from './modules/slider'
+import sendingForm from './modules/sendForm'
+import helpers, { animate } from './modules/helpers'
 
-timer() 
+timer('30 april 2022') 
 modal()
 menu()
 formValidate()
 smoothDwnBtn()
 calculatorValidate()
-calculator()
+calculator(100)
 tabs()
 slider()
+sendingForm()
+helpers()
